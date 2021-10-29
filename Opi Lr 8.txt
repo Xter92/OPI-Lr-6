@@ -1,0 +1,30 @@
+#include <iostream>
+#include "windows.h"
+#include <iomanip>
+
+
+using namespace std;
+
+int main()
+{
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	double x, a, b, c, f;
+	cout << "Input x:";
+	cin >> x;
+	cout << "Input a:";
+	cin >> a;
+	cout << "Input b:";
+	cin >> b;
+	cout << "Input c";
+	cin >> c;
+	if (x < 0 && b != 0){
+		f = a * x * x + b;
+	}
+	else if (b=0 && x>0){
+		f = (x - a) / (x - c);
+	}
+	else {
+		f = x / c;
+	}
+	cout << setw(8) << setprecision(3) << "F=" << f << endl;
